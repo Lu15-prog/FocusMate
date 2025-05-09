@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>FocusMate- Teste de Procrastinação</title>
+  <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>🧠 Teste de Procrastinação</h2>
+
+    <form id="questionario" class="card">
+
+      <div class="pergunta">
+        <p>1. Quando você tem uma tarefa importante, você:</p>
+        <label><input type="radio" name="q1" value="A"> Se cobra muito para executar do melhor jeito.</label>
+        <label><input type="radio" name="q1" value="B"> Fica apreensivo e acha que não vai dar conta.</label> 
+        <label><input type="radio" name="q1" value="C"> Só executa melhor perto do último prazo.</label> 
+      </div>
+
+      <div class="pergunta">
+        <p>2. O que você acha sobre planejamento?</p>
+        <label><input type="radio" name="q2" value="A"> Extremamente necessário. Preciso saber todos os detalhes da tarefa.</label>
+        <label><input type="radio" name="q2" value="B"> Considero muito confuso e não sei por onde começar.</label>
+        <label><input type="radio" name="q2" value="C"> Planejamento não funciona para mim, prefiro fazer perto do prazo.</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3. Como você reage a tarefas com prazos apertados?</p>
+        <label><input type="radio" name="q3" value="A"> Geralmente não consigo executar da forma que eu gostaria, falta tempo.</label>
+        <label><input type="radio" name="q3" value="B"> Simplesmente paraliso e executo pela metade.</label>
+        <label><input type="radio" name="q3" value="C"> Lido muito bem com prazos apertados porque consigo focar melhor.</label>
+      </div>
+      
+      <div class="pergunta">
+        <p>4. Qual é a frase que você mais se identifica?</p>
+        <label><input type="radio" name="q4" value="A"> "Vou esperar o momento certo para começar."</label>
+        <label><input type="radio" name="q4" value="B"> "Essa tarefa é grande/difícil demais para mim."</label>
+        <label><input type="radio" name="q4" value="C"> "Eu funciono melhor sob pressão."</label>
+      </div>
+      
+      <div class="pergunta">
+        <p>5. Complete: "O que realmente importa é..."</p>
+        <label><input type="radio" name="q5" value="A"> Fazer do melhor jeito e deixar excelente.</label>
+        <label><input type="radio" name="q5" value="B"> Ser capaz de fazer.</label>
+        <label><input type="radio" name="q5" value="C"> Conseguir me concentrar.</label>
+      </div>
+
+    
+      <button onclick="window.location.href='resultado.html'">ver resultado</button>
+
+    </form>
+
+    <div id="respostas" class="respostas"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

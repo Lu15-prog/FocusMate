@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container centralizado */
+.container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Card com espaçamento */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  font-size: 28px;
+  color: #6f42c1;
+  margin-bottom: 10px;
+}
+
+/* Lista de dicas */
+ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Botão de voltar */
+a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 25px;
+  background: linear-gradient(to right, #6f42c1, #8ec5fc);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #5b3e9b;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #8EC5FC, #E0C3FC);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  justify-content: space-between;
+  /* Garante que o rodapé fique no final da página */
+}
+
+/* Cabeçalho */
+header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #764ba2;
+}
+
+#area-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-principal {
+  width: 70px;
+}
+
+header #imgLogo {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #764ba2;
+}
+
+/* Conteúdo principal - Container maior */
+main.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 30px 40px;
+  /* Aumentando o padding para mais espaço interno */
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+  margin: 40px auto;
+  /* Centralizando o container */
+  max-width: 450px;
+  /* Aumentando a largura do container */
+  width: 90%;
+  min-height: 300px;
+  /* Aumentando a altura mínima */
+  height: auto;
+}
+
+h1 {
+  font-size: 32px;
+  /* Aumentando o tamanho do título */
+  margin-bottom: 20px;
+  /* Maior espaçamento entre o título e o conteúdo */
+  background: linear-gradient(to right, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 18px;
+  /* Aumentando o tamanho da fonte do parágrafo */
+  margin-bottom: 25px;
+  /* Aumentando o espaçamento */
+  color: #555;
+}
+
+.btn {
+  padding: 14px 30px;
+  /* Ajustando o tamanho do botão */
+  font-size: 18px;
+  font-weight: 600;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.4);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* Rodapé fixo no final da página */
+footer {
+  background: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.04);
+}
+
+footer .frases {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+footer .frases p {
+  margin: 0;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
