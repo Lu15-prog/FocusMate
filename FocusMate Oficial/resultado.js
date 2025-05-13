@@ -10,7 +10,7 @@ if (contagem.A > contagem.B && contagem.A > contagem.C) {
   maisMarcada = "C";
 }
 
-// Mostra o resultado com base na letra
+
 let mensagem = "";
 
 if (maisMarcada === "A") {
